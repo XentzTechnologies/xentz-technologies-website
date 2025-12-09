@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio – Xentz Technologies</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div class="logo">Xentz<span>Technologies</span></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn-glow">Contact</a>
+    </nav>
+</header>
+
+<section class="portfolio-wrapper">
+    <h2>Security Case Studies</h2>
+    <p class="portfolio-subtext">Real-world examples of security improvements and website hardening techniques.</p>
+
+    <div class="portfolio-grid">
+
+        <!-- Portfolio Item 1 -->
+        <div class="portfolio-card">
+            <h3>WordPress Hardening</h3>
+            <p><strong>Before:</strong> Public wp-admin, exposed wp-json users, XML-RPC enabled.</p>
+            <p><strong>After:</strong> Hidden login URL, disabled XML-RPC, restricted REST API, firewall installed.</p>
+            <span class="tag">Hardening</span>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+        <div class="portfolio-card">
+            <h3>Security Headers Upgrade</h3>
+            <p><strong>Before:</strong> Missing HSTS, X-Frame-Options, Content-Security-Policy.</p>
+            <p><strong>After:</strong> 8+ security headers added, A+ rating on SecurityHeaders.com.</p>
+            <span class="tag">Headers</span>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="portfolio-card">
+            <h3>Endpoint Exposure Audit</h3>
+            <p><strong>Before:</strong> Exposed /wp-json/wp/v2/users showing emails and usernames.</p>
+            <p><strong>After:</strong> Endpoint restricted, enumeration blocked, bot scanning reduced.</p>
+            <span class="tag">Audit</span>
+        </div>
+
+        <!-- Portfolio Item 4 -->
+        <div class="portfolio-card">
+            <h3>Cloudflare Security Setup</h3>
+            <p><strong>Before:</strong> No CDN, no bot filtering, weak HTTPS enforcement.</p>
+            <p><strong>After:</strong> DDoS protection, bot rules, WAF enabled, global caching.</p>
+            <span class="tag">Cloudflare</span>
+        </div>
+
+        <!-- Portfolio Item 5 -->
+        <div class="portfolio-card">
+            <h3>DNS & Email Authentication</h3>
+            <p><strong>Before:</strong> No SPF, DKIM, or DMARC — domain spoofable.</p>
+            <p><strong>After:</strong> Full email security implemented, phishing reduced.</p>
+            <span class="tag">Email Security</span>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Xentz Technologies • Cybersecurity Consulting</p>
+</footer>
+
+</body>
+</html>
