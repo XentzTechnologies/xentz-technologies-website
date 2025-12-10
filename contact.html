@@ -29,10 +29,6 @@
     </nav>
 </header>
 
-<section class="contact-wrapper">
-    <h2>Get in Touch</h2>
-    <p class="contact-subtext">Fill out the form below and I’ll respond within 24 hours.</p>
-
 <form action="https://formspree.io/f/meoyrvej" method="POST" class="contact-form">
 
   <label>Your Name</label>
@@ -45,17 +41,18 @@
   <input type="text" name="website">
 
   <label>Your Message</label>
-<textarea name="message" required></textarea>
+  <textarea name="message" required></textarea>
 
-<!-- Anti-bot field -->
-<input type="text" name="_gotcha" style="display:none">
+  <!-- ✅ Anti-bot honeypot (SAFE) -->
+  <input type="text" name="_gotcha" style="display:none">
 
-<!-- Redirect after submit -->
-<input type="hidden" name="_next" value="https://xentztechnologies.com/thank-you.html">
+  <!-- ✅ ✅ ONLY REDIRECT FIELD THAT WORKS -->
+  <input type="hidden" name="_next" value="https://xentztechnologies.com/thank-you.html">
 
-<button class="btn-primary" type="submit">Send Message</button>
+  <button class="btn-primary" type="submit">Send Message</button>
 
 </form>
+
 
 </section>
 
