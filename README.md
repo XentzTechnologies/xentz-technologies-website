@@ -18,7 +18,7 @@ Welcome to the official repository of **Xentz Technologies**, a lightweight cybe
 - `/docs` — Guides & security checklists  
 
 ## 🚀 Live Site
-https://YOUR-USERNAME.github.io/xentz-technologies/
+https://xentztechnologies.com
 
 ## 📫 Contact
 For audits or protection services:  
