@@ -610,13 +610,6 @@
 
     // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Demo-only form handler (replace with your backend / form provider)
-    document.querySelector('form')?.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Thanks! Your request has been captured. Connect this form to your email/CRM to go live.');
-      e.target.reset();
-    });
   </script>
 </body>
 </html>
