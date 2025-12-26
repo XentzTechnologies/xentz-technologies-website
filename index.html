@@ -18,158 +18,603 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/styles.css">
+ <link rel="stylesheet" href="assets/styles.css">
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD (Organization) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Organization",
     "name":"Xentz Technologies",
     "url":"https://xentztechnologies.com",
-    "description":"Security-first managed IT services and cybersecurity for SMBs."
+    "description":"Security-first managed IT services and cybersecurity for small and mid-sized businesses.",
+    "sameAs":[]
   }
   </script>
 </head>
 
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="#top">
-      <span class="brand-mark">
-        <img src="assets/logo.png" alt="Xentz Technologies Logo">
-      </span>
-      <span class="brand-text">
-        <span class="brand-name">Xentz Technologies</span>
-        <span class="brand-tag">Managed IT • Cybersecurity • Cloud</span>
-      </span>
-    </a>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Xentz Technologies Home">
+        <span class="brand-mark" aria-hidden="true">
+          <!-- XENTZ LOGO -->
+            <span class="brand-mark">
+  <img src="/assets/logo.png" alt="Xentz Technologies Logo">
+    </span>
+    </span>
+        <span class="brand-text">
+          <span class="brand-name">Xentz Technologies</span>
+          <span class="brand-tag">Managed IT • Cybersecurity • Cloud</span>
+        </span>
+      </a>
 
-    <nav class="nav">
-      <button class="nav-toggle" aria-expanded="false">
-        <span class="sr-only">Menu</span>
-        <span class="nav-toggle-bars"></span>
-      </button>
-      <div class="nav-menu" id="nav-menu">
-        <a href="#services">Services</a>
-        <a href="#why">Why Us</a>
-        <a href="#industries">Who We Serve</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn-primary btn-small" href="#contact">Schedule a Free Consultation</a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="#services">Services</a>
+          <a href="#why">Why Us</a>
+          <a href="#industries">Who We Serve</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-primary btn-small" href="#contact">Schedule a Free Consultation</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Security-first managed IT services</p>
+          <h1 id="hero-title">
+            Reliable IT Support and Cybersecurity for Growing Businesses
+          </h1>
+          <p class="hero-subtitle">
+            Xentz Technologies keeps your systems stable, your data protected, and your team productive with proactive monitoring,
+            fast support, and practical security that fits the way you work.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Schedule a Free Consultation</a>
+            <a class="btn btn-secondary" href="#services">View Our Services</a>
+          </div>
+
+          <ul class="hero-bullets" aria-label="Key benefits">
+            <li>
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2l8 4v6c0 6-4 10-8 12C8 22 4 18 4 12V6l8-4z" stroke="currentColor" stroke-width="1.6"/>
+                </svg>
+              </span>
+              Proactive monitoring + security-first operations
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 12a8 8 0 1 0 16 0A8 8 0 1 0 4 12z" stroke="currentColor" stroke-width="1.6"/>
+                  <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </span>
+              Fast response times and clear communication
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M7 8h10M7 12h10M7 16h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.6"/>
+                </svg>
+              </span>
+              Business-ready documentation and support standards
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-card" aria-label="Service highlights">
+          <div class="hero-card-inner">
+            <div class="metric">
+              <div class="metric-title">24/7</div>
+              <div class="metric-sub">Monitoring & alerting coverage</div>
+            </div>
+            <div class="divider"></div>
+
+            <div class="feature-list">
+              <div class="feature">
+                <span class="feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M7 7h10v10H7V7z" stroke="currentColor" stroke-width="1.6"/>
+                    <path d="M4 10V7a3 3 0 0 1 3-3h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    <path d="M20 14v3a3 3 0 0 1-3 3h-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <div class="feature-title">Managed IT</div>
+                  <div class="feature-desc">Day-to-day support, patching, and device management.</div>
+                </div>
+              </div>
+
+              <div class="feature">
+                <span class="feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2l8 4v6c0 6-4 10-8 12C8 22 4 18 4 12V6l8-4z" stroke="currentColor" stroke-width="1.6"/>
+                    <path d="M9.5 12.5l1.5 1.5 3.8-4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <div class="feature-title">Cybersecurity</div>
+                  <div class="feature-desc">Threat protection, policies, and security hardening.</div>
+                </div>
+              </div>
+
+              <div class="feature">
+                <span class="feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 7h16M6 7v10a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    <path d="M9 11h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <div class="feature-title">Backup & Recovery</div>
+                  <div class="feature-desc">Restore-ready backups for business continuity.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="note">
+              <strong>Free consult:</strong> We’ll review your current setup and recommend next steps you can act on.
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-  </div>
-</header>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
 
-<main id="main">
-<!-- (ALL YOUR CONTENT ABOVE CONTACT IS UNCHANGED) -->
+    <!-- Trust / Value -->
+    <section class="section" aria-labelledby="trust-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="trust-title">IT that stays out of your way — and security that doesn’t</h2>
+          <p class="section-sub">
+            Most issues are preventable. We focus on the fundamentals that keep your business running: stability, visibility,
+            and protection — with clear guidance for non-technical teams.
+          </p>
+        </div>
 
-<!-- CONTACT -->
-<section class="section" id="contact">
-  <div class="container contact-grid">
-    <div>
-      <h2>Talk to Xentz Technologies</h2>
-      <p>Tell us what you’re dealing with — we’ll respond with clear next steps.</p>
+        <div class="grid-4">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 12a8 8 0 1 0 16 0A8 8 0 1 0 4 12z" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Reduce downtime</h3>
+            <p>Proactive monitoring and patching help catch issues early and keep workstations and servers dependable.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l8 4v6c0 6-4 10-8 12C8 22 4 18 4 12V6l8-4z" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M8 13l2.5 2.5L16 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Improve security posture</h3>
+            <p>We harden accounts, endpoints, and networks to reduce risk and raise your baseline security quickly.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 7h10v10H7V7z" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M5 5h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M5 19h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Simplify IT management</h3>
+            <p>Standardized systems, clear documentation, and consistent support keep your environment organized.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 10V8a5 5 0 0 1 10 0v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M6 10h12v10H6V10z" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M12 14v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Protect business data</h3>
+            <p>Layered defenses plus restore-tested backups help safeguard sensitive data and keep you operational.</p>
+          </article>
+        </div>
+
+        <div class="trust-strip" role="group" aria-label="Trust indicators">
+          <div class="trust-item"><strong>Security-first</strong><span>Policies, hardening, and visibility</span></div>
+          <div class="trust-item"><strong>Proactive</strong><span>Monitor, patch, and prevent</span></div>
+          <div class="trust-item"><strong>Practical</strong><span>Clear plans you can follow</span></div>
+          <div class="trust-item"><strong>Accountable</strong><span>Documented work and reporting</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="services-title">IT services built for reliability and protection</h2>
+          <p class="section-sub">
+            Choose ongoing management, targeted security improvements, or a full plan that aligns your IT with business goals.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M7 7h10v10H7V7z" stroke="currentColor" stroke-width="1.6"/>
+                  <path d="M4 4h16v16H4V4z" stroke="currentColor" stroke-width="1.6" opacity="0.45"/>
+                </svg>
+              </div>
+              <h3>Managed IT Services</h3>
+            </div>
+            <p>Full-service support for endpoints, servers, and users — including patching, automation, and help desk coverage.</p>
+            <ul class="list">
+              <li>Device management & patching</li>
+              <li>Help desk & user support</li>
+              <li>Inventory & documentation</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2l8 4v6c0 6-4 10-8 12C8 22 4 18 4 12V6l8-4z" stroke="currentColor" stroke-width="1.6"/>
+                  <path d="M9 12h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>Cybersecurity & Threat Protection</h3>
+            </div>
+            <p>Security controls designed for real-world businesses — to reduce risk without slowing your team down.</p>
+            <ul class="list">
+              <li>Endpoint protection & hardening</li>
+              <li>Email security & phishing defense</li>
+              <li>Security reviews & remediation</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M6 20h12a2 2 0 0 0 2-2V9l-5-5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z" stroke="currentColor" stroke-width="1.6"/>
+                  <path d="M8 13h8M8 16h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>Backup & Disaster Recovery</h3>
+            </div>
+            <p>Restore-tested backups and recovery planning so you can withstand outages, ransomware, and accidents.</p>
+            <ul class="list">
+              <li>Backup design & automation</li>
+              <li>Recovery testing & reporting</li>
+              <li>Business continuity planning</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M7 16a4 4 0 0 1 0-8 5 5 0 0 1 9-1 4 4 0 0 1 1 9H7z" stroke="currentColor" stroke-width="1.6"/>
+                </svg>
+              </div>
+              <h3>Cloud & Microsoft 365 Solutions</h3>
+            </div>
+            <p>Secure configuration and management of Microsoft 365, identity, devices, and cloud-based collaboration.</p>
+            <ul class="list">
+              <li>M365 setup & optimization</li>
+              <li>Identity & access controls</li>
+              <li>Secure collaboration workflows</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 7h16v10H4V7z" stroke="currentColor" stroke-width="1.6"/>
+                  <path d="M8 17v3M16 17v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M7 12h2M11 12h2M15 12h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>Network & Infrastructure Management</h3>
+            </div>
+            <p>Stable networks, secure Wi-Fi, and well-managed infrastructure that supports performance and growth.</p>
+            <ul class="list">
+              <li>Firewall & network configuration</li>
+              <li>Switching, Wi-Fi, and VPN</li>
+              <li>Infrastructure monitoring</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 20V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M8 14l4-4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M4 4h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+                </svg>
+              </div>
+              <h3>IT Consulting & Assessments</h3>
+            </div>
+            <p>Clear, prioritized recommendations — from security assessments to IT roadmaps — so you can spend with confidence.</p>
+            <ul class="list">
+              <li>Security & risk assessments</li>
+              <li>IT strategy & roadmaps</li>
+              <li>Vendor and tooling guidance</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="section" id="why" aria-labelledby="why-title">
+      <div class="container why-grid">
+        <div>
+          <div class="section-head left">
+            <h2 id="why-title">Why businesses choose Xentz Technologies</h2>
+            <p class="section-sub">
+              We run IT like an operational discipline: proactive, documented, and security-focused — with support that’s easy to work with.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <article class="mini-card">
+              <h3>Proactive monitoring</h3>
+              <p>We watch for warnings before they become outages and prioritize fixes that reduce future issues.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Security-first mindset</h3>
+              <p>We build secure defaults into accounts, devices, and networks — then verify it’s working.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Fast response times</h3>
+              <p>When something breaks, you don’t want a ticket queue. You want action and updates.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Transparent communication</h3>
+              <p>Clear explanations, documented work, and practical recommendations — no hype, no jargon.</p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="panel">
+          <h3>What “enterprise-grade” means for you</h3>
+          <p>
+            You get structured processes, consistent support, and tools designed to maintain security and reliability —
+            tailored to your size, budget, and compliance needs.
+          </p>
+          <ul class="checklist">
+            <li>Standardized configurations and baseline security</li>
+            <li>Patch management and vulnerability reduction</li>
+            <li>Reporting, documentation, and accountability</li>
+            <li>Scalable solutions as you grow</li>
+          </ul>
+          <a class="btn btn-secondary" href="#contact">Talk to an IT Specialist</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Who We Serve -->
+    <section class="section section-alt" id="industries" aria-labelledby="serve-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="serve-title">Built for small and mid-sized teams</h2>
+          <p class="section-sub">
+            Whether you’re a small office or a growing company, we help you stay secure and productive without building an internal IT department.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <article class="card compact">
+            <h3>Small businesses</h3>
+            <p>Reliable IT support and clear security improvements that fit your budget.</p>
+          </article>
+          <article class="card compact">
+            <h3>Professional offices</h3>
+            <p>Protect sensitive information and keep staff online with stable systems.</p>
+          </article>
+          <article class="card compact">
+            <h3>Growing companies</h3>
+            <p>Standardize IT early so scaling doesn’t create chaos or risk.</p>
+          </article>
+          <article class="card compact">
+            <h3>Remote & hybrid teams</h3>
+            <p>Secure access, device management, and collaboration that just works.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta-inner">
+        <div>
+          <h2 id="cta-title">Let us handle your IT — so you can focus on your business</h2>
+          <p>
+            Book a free consultation to review your current setup, identify quick wins, and plan improvements that reduce risk and downtime.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="#contact">Schedule a Free Consultation</a>
+          <a class="btn btn-ghost" href="#services">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-head left">
+            <h2 id="contact-title">Talk to Xentz Technologies</h2>
+            <p class="section-sub">
+              Tell us what you’re dealing with — support issues, security concerns, or a need for ongoing IT management.
+              We’ll respond with clear next steps.
+            </p>
+          </div>
+
+          <div class="contact-points">
+            <div class="contact-point">
+              <strong>Business-friendly guidance</strong>
+              <span>We explain options in plain language.</span>
+            </div>
+            <div class="contact-point">
+              <strong>Security-first approach</strong>
+              <span>We prioritize protection and continuity.</span>
+            </div>
+            <div class="contact-point">
+              <strong>Fast follow-up</strong>
+              <span>We’ll respond within 1 business day.</span>
+            </div>
+          </div>
+
+          <div class="smallprint">
+            Prefer email? Send details to <a href="mailto:info@xentztechnologies.com">info@xentztechnologies.com</a>
+          </div>
+        </div>
+
+        <form class="form" aria-label="Contact form">
+        <form>
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Jane Smith" />
+          </div>
+
+          <div class="form-row">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" placeholder="Acme Co." />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@company.com" />
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 123-4567" />
+          </div>
+
+          <div class="form-row">
+            <label for="need">What can we help with?</label>
+            <select id="need" name="need" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Managed IT Services</option>
+              <option>Cybersecurity & Threat Protection</option>
+              <option>Backup & Disaster Recovery</option>
+              <option>Cloud / Microsoft 365</option>
+              <option>Network & Infrastructure</option>
+              <option>IT Consulting & Assessment</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Short message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Briefly describe your current environment and the problems you're trying to solve."></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">
+            Request a Consultation
+          </button>
+
+          <p class="form-note">
+            By submitting, you agree to be contacted about your request. We don’t sell your information.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2l8 4v6c0 6-4 10-8 12C8 22 4 18 4 12V6l8-4z" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+          </span>
+          <div>
+            <div class="footer-name">Xentz Technologies</div>
+            <div class="footer-desc">
+              Security-first managed IT services, cybersecurity, cloud, and backup solutions for small and mid-sized businesses.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-title">Company</div>
+          <a href="#why">Why Us</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Legal</div>
+          <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
+          <a href="#" aria-label="Terms of Service">Terms of Service</a>
+        </div>
+      </div>
     </div>
 
-    <!-- ✅ REAL WORKING FORM -->
-    <form class="form" aria-label="Contact form">
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Xentz Technologies LLC. All rights reserved.</span>
+      <span class="muted">Built for reliability. Designed for trust.</span>
+    </div>
+  </footer>
 
-      <!-- Web3Forms -->
-      <input type="hidden" name="access_key" value="7c1eb47a-2097-4a54-9054-60e91a3f0943">
-      <input type="hidden" name="subject" value="New consultation request — Xentz Technologies">
-
-      <div class="form-row">
-        <label for="name">Full name</label>
-        <input id="name" name="name" required>
-      </div>
-
-      <div class="form-row">
-        <label for="company">Company</label>
-        <input id="company" name="company">
-      </div>
-
-      <div class="form-row">
-        <label for="email">Work email</label>
-        <input id="email" name="email" type="email" required>
-      </div>
-
-      <div class="form-row">
-        <label for="phone">Phone</label>
-        <input id="phone" name="phone">
-      </div>
-
-      <div class="form-row">
-        <label for="need">What can we help with?</label>
-        <select id="need" name="need" required>
-          <option value="" disabled selected>Select one</option>
-          <option>Managed IT Services</option>
-          <option>Cybersecurity</option>
-          <option>Backup & Recovery</option>
-          <option>Cloud / Microsoft 365</option>
-          <option>Networking</option>
-          <option>Consulting</option>
-        </select>
-      </div>
-
-      <div class="form-row">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
-
-      <button class="btn btn-primary btn-block" type="submit">
-        Request a Consultation
-      </button>
-
-      <p class="form-note">We don’t sell your information.</p>
-    </form>
-  </div>
-</section>
-</main>
-
-<footer class="footer">
-  <div class="container footer-bottom">
-    © <span id="year"></span> Xentz Technologies LLC
-  </div>
-</footer>
-
-<script>
-  // Mobile nav
-  const toggle = document.querySelector('.nav-toggle');
-  const menu = document.getElementById('nav-menu');
-  toggle?.addEventListener('click', () => {
-    toggle.setAttribute('aria-expanded',
-      toggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
-    menu.classList.toggle('open');
-  });
-
-  // Footer year
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // ✅ REAL FORM HANDLER (same UX, now sends)
-  const form = document.querySelector('.form');
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: formData
+  <script>
+    // Mobile nav
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle?.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('open');
     });
 
-    const data = await res.json();
+    // Close menu on link click (mobile)
+    menu?.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('open');
+      });
+    });
 
-    if (data.success) {
-      alert('Thanks! Your request has been sent.');
-      form.reset();
-    } else {
-      alert('Something went wrong. Please try again.');
-      console.error(data);
-    }
-  });
-</script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Demo-only form handler (replace with your backend / form provider)
+    document.querySelector('form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thanks! Your request has been captured. Connect this form to your email/CRM to go live.');
+      e.target.reset();
+    });
+  </script>
 </body>
 </html>
