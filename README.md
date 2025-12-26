@@ -24,4 +24,4 @@ This site is built as a fast, secure, and responsive static website designed to 
 ---
 
 ## 🌐 Live Site
-xentztechnologies.com
+https://xentztechnologies.com
