@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Backup &amp; Disaster Recovery in Dallas, TX | Xentz Technologies</title>
+  <meta name="description" content="Restore-tested backup and disaster recovery for Dallas–Fort Worth businesses. Protection against ransomware, hardware failure, and accidental deletion — with recovery you can prove works.">
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://xentztechnologies.com/backup-disaster-recovery-dallas/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Backup &amp; Disaster Recovery in Dallas, TX | Xentz Technologies" />
+  <meta property="og:description" content="Restore-tested backups and recovery planning for ransomware, hardware failure, and accidental deletion." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xentztechnologies.com/backup-disaster-recovery-dallas/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/styles.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBYN44WXGQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CBYN44WXGQ');
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- JSON-LD (Service) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://xentztechnologies.com/backup-disaster-recovery-dallas/#service",
+    "name": "Backup and Disaster Recovery",
+    "serviceType": "Backup and Disaster Recovery",
+    "url": "https://xentztechnologies.com/backup-disaster-recovery-dallas/",
+    "description": "Restore-tested backup design, recovery planning, and business continuity for small and mid-sized businesses in Dallas–Fort Worth.",
+    "areaServed": [
+      { "@type": "City", "name": "Dallas, TX" },
+      { "@type": "Country", "name": "United States" }
+    ],
+    "provider": {
+      "@type": "Organization",
+      "@id": "https://xentztechnologies.com/#organization",
+      "name": "Xentz Technologies",
+      "url": "https://xentztechnologies.com"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD (Breadcrumbs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://xentztechnologies.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Backup and Disaster Recovery", "item": "https://xentztechnologies.com/backup-disaster-recovery-dallas/" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD (FAQ) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Isn't Microsoft 365 already backing up our data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Microsoft replicates your data for their own resilience and keeps deleted items for a limited retention window, but that is not a backup. If a file is deleted or encrypted and nobody notices until after retention expires, it is gone. Microsoft's own terms recommend third-party backup."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should backups run?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on how much work you can afford to lose. If losing a day of data would be tolerable, nightly is fine. If losing an hour would be serious, you need more frequent snapshots. That decision drives the design and the cost."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do we know our backups actually work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By restoring from them on a schedule and documenting the result. A backup job reporting success only proves the job ran, not that the data is recoverable. Untested backups fail at the worst possible moment, and this is the single most common gap we find."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will backups protect us from ransomware?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Only if the backups themselves cannot be encrypted. Modern ransomware deliberately targets backup systems and network shares first. Immutable or offline copies are what make recovery possible rather than paying."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long would recovery take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "That is a design decision, not a fixed number. Restoring a single deleted file takes minutes. Rebuilding a failed server from scratch can take a day or more unless you have planned for faster recovery. We help you decide what downtime is acceptable and build to that target."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do we need this if we are fully cloud-based?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Cloud platforms protect against their own hardware failure, not against your staff deleting things, an attacker with valid credentials, or a departing employee wiping a shared drive. Those are the scenarios backup addresses."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Xentz Technologies Home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="/assets/logo.png" alt="Xentz Technologies Logo">
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Xentz Technologies</span>
+          <span class="brand-tag">Managed IT • Cybersecurity • Cloud</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="/#services">Services</a>
+          <a href="/#why">Why Us</a>
+          <a href="/#industries">Who We Serve</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-primary btn-small" href="#contact">Schedule a Free Consultation</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow"><a href="/">Home</a> &rsaquo; Backup &amp; Disaster Recovery</p>
+        <h1 id="hero-title">Backup &amp; Disaster Recovery in Dallas, TX</h1>
+        <p class="hero-subtitle">
+          Backups that have actually been restored from — because a backup nobody has tested is a belief,
+          not a safeguard, and you find out which one you had on the worst day of the year.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">Request a Backup Review</a>
+          <a class="btn btn-secondary" href="#what-we-do">What We Cover</a>
+        </div>
+      </div>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Intro -->
+    <section class="section" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="section-head left">
+          <h2 id="intro-title">Almost everyone has backups. Far fewer have recovery.</h2>
+          <p class="section-sub">
+            The two are not the same thing, and the difference only becomes visible at the exact moment it matters most.
+          </p>
+        </div>
+        <p>
+          When we assess a new environment, we usually find a backup system that reports success every night. Then we ask
+          when someone last restored from it. The answer is often that nobody has, or that it was tried once during
+          setup two years ago.
+        </p>
+        <p>
+          That gap is where businesses lose everything. Backup jobs succeed while silently skipping a critical database.
+          Retention is set to seven days, so a problem discovered in week three has no clean copy to return to. The backup
+          drive sits on the same network the ransomware just encrypted. Every one of these looks fine on a dashboard.
+        </p>
+        <p>
+          Our work is making recovery something you have observed rather than something you assume.
+        </p>
+      </div>
+    </section>
+
+    <!-- What we cover -->
+    <section class="section section-alt" id="what-we-do" aria-labelledby="cover-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="cover-title">What we cover</h2>
+          <p class="section-sub">
+            Designed around what you can afford to lose and how long you can afford to be down.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="service-card">
+            <h3>Backup design</h3>
+            <p>
+              What gets backed up, how often, how long copies are kept, and where they live. Built around your actual
+              tolerance for data loss rather than whatever the software defaulted to.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Restore testing</h3>
+            <p>
+              Scheduled test restores with documented results. This is the part almost everyone skips and the only thing
+              that turns a backup into a guarantee.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Ransomware-resistant copies</h3>
+            <p>
+              Immutable or offline copies that an attacker with full network access cannot alter or delete. Without this,
+              your backups are just more files to encrypt.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Microsoft 365 backup</h3>
+            <p>
+              Email, OneDrive, SharePoint, and Teams protected independently of Microsoft's retention windows — the gap
+              most businesses don't know they have.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Recovery planning</h3>
+            <p>
+              A written plan naming who does what, in what order, with what credentials. Discovering that the only person
+              who knows the recovery process is unreachable is a common second disaster.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Business continuity</h3>
+            <p>
+              How you keep operating while systems are being restored. Some businesses can pause for a day; others need
+              a path to working within hours. The answer changes the design.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two questions -->
+    <section class="section" aria-labelledby="questions-title">
+      <div class="container">
+        <div class="section-head left">
+          <h2 id="questions-title">Two questions decide everything</h2>
+          <p class="section-sub">
+            Before any product discussion, backup design comes down to two numbers that only you can set.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="mini-card">
+            <h3>How much work can you afford to lose?</h3>
+            <p>
+              If backups run nightly and a server fails at 4pm, you lose the day. For some businesses that's an
+              inconvenience. For one processing transactions continuously, it's unacceptable. This number sets how often
+              backups run — and it's the main driver of cost.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>How long can you afford to be down?</h3>
+            <p>
+              Restoring a file takes minutes. Rebuilding a failed server from a backup can take a day or more. If you
+              need to be operational within hours, that requires a different design and a bigger budget. Deciding this
+              deliberately beats discovering it during an outage.
+            </p>
+          </article>
+        </div>
+
+        <p>
+          Most vendors skip these questions and sell you a product. The product then determines your recovery
+          capabilities by accident. We'd rather establish the targets first and build backward from them — including
+          telling you when your current setup already meets them and doesn't need replacing.
+        </p>
+      </div>
+    </section>
+
+    <!-- Common failures -->
+    <section class="section section-alt" aria-labelledby="failures-title">
+      <div class="container why-grid">
+        <div>
+          <div class="section-head left">
+            <h2 id="failures-title">How backups fail in practice</h2>
+            <p class="section-sub">
+              Not theoretical. These are the patterns we find repeatedly in real environments.
+            </p>
+          </div>
+          <p>
+            <strong>The job succeeds but the data is incomplete.</strong> A database in use gets skipped, or a new server
+            was never added to the backup scope. The dashboard stays green for months.
+          </p>
+          <p>
+            <strong>Retention is too short.</strong> Corruption or a quiet deletion goes unnoticed for weeks. By the time
+            anyone looks, every retained copy already contains the problem.
+          </p>
+          <p>
+            <strong>The backup shares the fate of the original.</strong> A backup drive on the same network, reachable
+            with the same credentials, gets encrypted alongside everything else.
+          </p>
+          <p>
+            <strong>Nobody knows how to restore.</strong> The backup is fine. The recovery takes four days because the
+            process was never documented and the person who set it up left last year.
+          </p>
+        </div>
+
+        <aside class="panel">
+          <h3>Worth a review if</h3>
+          <ul class="checklist">
+            <li>Nobody can say when a restore was last tested</li>
+            <li>Your Microsoft 365 data has no backup outside Microsoft</li>
+            <li>Backups live on the same network as production, always connected</li>
+            <li>You don't know your retention period</li>
+            <li>Your recovery plan exists only in one person's head</li>
+            <li>Cyber insurance is asking about backup controls</li>
+          </ul>
+          <a class="btn btn-secondary" href="#contact">Request a Backup Review</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="faq-title">Common questions</h2>
+        </div>
+
+        <div class="grid-2">
+          <article class="mini-card">
+            <h3>Isn't Microsoft 365 already backing up our data?</h3>
+            <p>
+              No. Microsoft replicates data for their own resilience and keeps deleted items for a limited window, but
+              that isn't a backup. If something is deleted or encrypted and nobody notices until retention expires, it's
+              gone. Microsoft's own terms recommend third-party backup.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>How often should backups run?</h3>
+            <p>
+              It depends on how much work you can afford to lose. Tolerable to lose a day? Nightly is fine. Losing an
+              hour would be serious? You need more frequent snapshots.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>How do we know backups actually work?</h3>
+            <p>
+              By restoring from them on a schedule and documenting the result. A job reporting success only proves it
+              ran, not that the data is recoverable.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>Will backups protect us from ransomware?</h3>
+            <p>
+              Only if the backups can't be encrypted too. Modern ransomware targets backup systems and network shares
+              first. Immutable or offline copies are what make recovery possible instead of paying.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>How long would recovery take?</h3>
+            <p>
+              That's a design decision, not a fixed number. A single file takes minutes; rebuilding a failed server can
+              take a day or more unless you've planned for faster recovery.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>Do we need this if we're fully cloud-based?</h3>
+            <p>
+              Yes. Cloud platforms protect against their hardware failing — not against your staff deleting things, an
+              attacker with valid credentials, or a departing employee wiping a shared drive.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related services -->
+    <section class="section section-alt" aria-labelledby="related-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="related-title">Related services</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card compact">
+            <h3><a href="/managed-it-services-dallas/">Managed IT Services</a></h3>
+            <p>Ongoing support and monitoring — including watching that backups actually complete.</p>
+          </article>
+          <article class="card compact">
+            <h3><a href="/cybersecurity-services-dallas/">Cybersecurity &amp; Threat Protection</a></h3>
+            <p>Reducing the chance you need to recover in the first place.</p>
+          </article>
+          <article class="card compact">
+            <h3>Cloud &amp; Microsoft 365</h3>
+            <p>Secure configuration of identity, email, and collaboration tools.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-head left">
+            <h2 id="contact-title">Find out if your backups would hold</h2>
+            <p class="section-sub">
+              Tell us what you're running today. We'll review what's protected, what isn't, and whether a restore would
+              actually work — including when the answer is that you're already in good shape.
+            </p>
+          </div>
+
+          <div class="contact-points">
+            <div class="contact-point">
+              <strong>Gap-focused</strong>
+              <span>What isn't covered, in plain terms.</span>
+            </div>
+            <div class="contact-point">
+              <strong>Tested, not assumed</strong>
+              <span>Restores we verify rather than take on faith.</span>
+            </div>
+            <div class="contact-point">
+              <strong>Fast follow-up</strong>
+              <span>We respond within 1 business day.</span>
+            </div>
+          </div>
+
+          <div class="smallprint">
+            Prefer email? Send details to <a href="mailto:info@xentztechnologies.com">info@xentztechnologies.com</a>
+          </div>
+        </div>
+
+        <form class="form" action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form">
+          <input type="hidden" name="access_key" value="7c1eb47a-2097-4a54-9054-60e91a3f0943">
+          <input type="hidden" name="subject" value="Backup &amp; DR inquiry — Xentz Technologies">
+          <input type="hidden" name="redirect" value="https://xentztechnologies.com/thank-you.html">
+          <input type="hidden" name="need" value="Backup & Disaster Recovery">
+
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Jane Smith" />
+          </div>
+
+          <div class="form-row">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" placeholder="Acme Co." />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@company.com" />
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 123-4567" />
+          </div>
+
+          <div class="form-row">
+            <label for="tested">When was your last tested restore?</label>
+            <select id="tested" name="tested" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Within the last 3 months</option>
+              <option>Within the last year</option>
+              <option>Longer than a year ago</option>
+              <option>Never, or not sure</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">What are you protecting?</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Servers, Microsoft 365, file shares, line-of-business applications — what matters most?"></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">Request a Backup Review</button>
+
+          <p class="form-note">
+            By submitting, you agree to be contacted about your request. We don't sell your information.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div>
+            <div class="footer-name">Xentz Technologies</div>
+            <div class="footer-desc">
+              Security-first managed IT services, cybersecurity, cloud, and backup solutions for small and mid-sized businesses.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-title">Services</div>
+          <a href="/managed-it-services-dallas/">Managed IT</a>
+          <a href="/cybersecurity-services-dallas/">Cybersecurity</a>
+          <a href="/backup-disaster-recovery-dallas/">Backup &amp; Recovery</a>
+          <a href="/#services">All Services</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Company</div>
+          <a href="/#why">Why Us</a>
+          <a href="/#industries">Who We Serve</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year"></span> Xentz Technologies LLC. All rights reserved.</span>
+      <span class="muted">Built for reliability. Designed for trust.</span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle?.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('open');
+    });
+
+    menu?.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('open');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
