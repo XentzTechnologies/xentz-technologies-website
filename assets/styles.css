@@ -115,6 +115,7 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 2px; text-underl
 }
 .nav-menu a{ padding: 10px 8px; border-radius: 10px; }
 .nav-menu a:hover{ background: rgba(59,130,246,0.14); text-decoration:none; }
+.nav-phone{ font-weight: 600; color: #93c5fd; white-space: nowrap; }
 
 .nav-toggle{
   display:none;
@@ -606,6 +607,8 @@ input:focus, textarea:focus, select:focus{
 }
 .footer-name{ font-weight: 800; letter-spacing: -0.02em; color: #fff; }
 .footer-desc{ margin-top: 6px; color: rgba(199,210,254,0.72); max-width: 60ch; }
+.footer-phone{ margin-top: 8px; }
+.footer-phone a{ color: #93c5fd; font-weight: 600; }
 .footer-links{
   display:flex;
   gap: 40px;
