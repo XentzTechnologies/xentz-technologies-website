@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Network &amp; Infrastructure Management in Dallas, TX | Xentz Technologies</title>
+  <meta name="description" content="Network management for Dallas–Fort Worth businesses: firewall configuration, business Wi-Fi, VPN and remote access, switching, and infrastructure monitoring.">
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://xentztechnologies.com/network-management-dallas/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Network &amp; Infrastructure Management in Dallas, TX | Xentz Technologies" />
+  <meta property="og:description" content="Firewalls, business Wi-Fi, VPN, switching, and monitoring for growing businesses." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xentztechnologies.com/network-management-dallas/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/styles.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBYN44WXGQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CBYN44WXGQ');
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- JSON-LD (Service) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://xentztechnologies.com/network-management-dallas/#service",
+    "name": "Network and Infrastructure Management",
+    "serviceType": "Network and Infrastructure Management",
+    "url": "https://xentztechnologies.com/network-management-dallas/",
+    "description": "Firewall configuration, business Wi-Fi, VPN and remote access, switching, and infrastructure monitoring for small and mid-sized businesses in Dallas–Fort Worth.",
+    "areaServed": [
+      { "@type": "City", "name": "Dallas, TX" },
+      { "@type": "Country", "name": "United States" }
+    ],
+    "provider": {
+      "@type": "Organization",
+      "@id": "https://xentztechnologies.com/#organization",
+      "name": "Xentz Technologies",
+      "url": "https://xentztechnologies.com"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD (Breadcrumbs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://xentztechnologies.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Network and Infrastructure Management", "item": "https://xentztechnologies.com/network-management-dallas/" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD (FAQ) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Our Wi-Fi keeps dropping. Is that the internet connection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually not. Most Wi-Fi complaints in offices come from coverage and capacity rather than the internet line: too few access points, consumer equipment handling more devices than it was built for, or channel interference from neighbouring businesses. A site survey identifies which it is before anyone spends money."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do we need business-grade equipment or is consumer gear fine?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Consumer equipment works until it doesn't. It typically lacks VLAN support for separating guest traffic, has no central management across multiple units, and receives security updates for a short period. For under ten people in one room it may be adequate; beyond that the failures become expensive in staff time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should guest Wi-Fi be separate from our business network?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, always. Guest devices are unmanaged and may be compromised. On a shared network they can reach your servers, printers, and workstations. Separating them is straightforward on business equipment and is one of the highest-value network changes available."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a VPN still the right way to give remote access?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on what people need to reach. If your applications are cloud-based, a full VPN may be unnecessary and adds friction. If staff need file shares or line-of-business software hosted in your office, controlled remote access is still required. Exposing remote desktop directly to the internet is never the answer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should firewalls be reviewed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At least annually, and after any significant change. Firewall rules accumulate over years as temporary exceptions get added and never removed. Reviewing them usually reveals open ports serving systems that were decommissioned long ago."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do we still need on-site infrastructure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Less than most businesses assume, but rarely none. Even fully cloud-based companies need reliable connectivity, a firewall, and Wi-Fi. The question is whether the servers you are still maintaining are earning their cost, and often the honest answer is no."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Xentz Technologies Home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="/assets/logo.png" alt="Xentz Technologies Logo">
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Xentz Technologies</span>
+          <span class="brand-tag">Managed IT • Cybersecurity • Cloud</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="/#services">Services</a>
+          <a href="/#why">Why Us</a>
+          <a href="/#industries">Who We Serve</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-phone" href="tel:+12147851766">(214) 785-1766</a>
+          <a class="btn btn-primary btn-small" href="#contact">Schedule a Free Consultation</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow"><a href="/">Home</a> &rsaquo; Network &amp; Infrastructure Management</p>
+        <h1 id="hero-title">Network &amp; Infrastructure Management in Dallas, TX</h1>
+        <p class="hero-subtitle">
+          Firewalls, Wi-Fi, switching, and remote access designed to be boring — because the only time
+          anyone notices the network is when it stops working.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">Request a Network Review</a>
+          <a class="btn btn-secondary" href="#what-we-do">What We Cover</a>
+        </div>
+      </div>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Intro -->
+    <section class="section" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="section-head left">
+          <h2 id="intro-title">Nobody plans a network. It accumulates.</h2>
+          <p class="section-sub">
+            Most small business networks weren't designed. They grew — a router from the internet provider, a switch
+            added when desks ran out, an access point bought when the back office had no signal.
+          </p>
+        </div>
+        <p>
+          The result works, mostly. Then a video call drops in the conference room, guests are on the same network as the
+          accounting server, and nobody can say what the firewall is actually allowing through because the rules were
+          added one exception at a time over six years.
+        </p>
+        <p>
+          Our work is turning that into something documented and deliberate: equipment appropriate to your size,
+          separated traffic, controlled remote access, and monitoring that tells you a switch is failing before your
+          staff do.
+        </p>
+      </div>
+    </section>
+
+    <!-- What we cover -->
+    <section class="section section-alt" id="what-we-do" aria-labelledby="cover-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="cover-title">What we cover</h2>
+          <p class="section-sub">
+            Design, configuration, and ongoing management of the infrastructure everything else depends on.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="service-card">
+            <h3>Firewall configuration</h3>
+            <p>
+              Rules reviewed and rebuilt around what you actually need open, rather than inherited from years of
+              temporary exceptions nobody removed.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Business Wi-Fi</h3>
+            <p>
+              Coverage planned for your actual floor space and device count, with guest traffic separated from business
+              systems. Most Wi-Fi complaints are design problems, not bandwidth problems.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Network segmentation</h3>
+            <p>
+              Guest devices, staff devices, servers, and equipment like printers and cameras kept on separate segments,
+              so a compromise in one place doesn't reach everything.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>VPN and remote access</h3>
+            <p>
+              Controlled paths into your network for staff working elsewhere — never remote desktop exposed directly to
+              the internet, which remains a common and reliably exploited mistake.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Switching and cabling</h3>
+            <p>
+              Managed switches sized for your needs, with a documented map of what's connected where. Untangling an
+              undocumented rack during an outage costs hours you don't have.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Infrastructure monitoring</h3>
+            <p>
+              Alerting on device failures, saturated links, and connectivity loss — so problems are addressed before
+              someone walks over to complain about the internet.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we find -->
+    <section class="section" aria-labelledby="findings-title">
+      <div class="container">
+        <div class="section-head left">
+          <h2 id="findings-title">What we usually find</h2>
+          <p class="section-sub">
+            Four patterns that show up in most unmanaged networks. None are exotic; all of them matter.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="mini-card">
+            <h3>One flat network</h3>
+            <p>
+              Guests, staff laptops, servers, printers, and security cameras all on the same segment. Anything
+              compromised can reach everything else — including devices that haven't had a firmware update in years.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>Firewall rules nobody understands</h3>
+            <p>
+              Ports opened for a vendor in 2019, a system that no longer exists, or a remote access method that was
+              replaced. Each one is an unnecessary way in that nobody is watching.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>Consumer equipment doing business work</h3>
+            <p>
+              Home routers and access points handling forty devices, with no central management and no security updates
+              since the manufacturer moved on to the next model.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>No documentation</h3>
+            <p>
+              No diagram, no record of what's plugged in where, no list of device passwords. Every troubleshooting
+              session starts with rediscovering the network from scratch.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honest framing -->
+    <section class="section section-alt" aria-labelledby="honest-title">
+      <div class="container why-grid">
+        <div>
+          <div class="section-head left">
+            <h2 id="honest-title">When you don't need us for this</h2>
+            <p class="section-sub">
+              Network work is easy to oversell. A few situations where the honest answer is to spend less.
+            </p>
+          </div>
+          <p>
+            If you're a small team in a single room, fully cloud-based, with no on-site servers, a good business-grade
+            router and access point may be genuinely sufficient. We'll tell you that.
+          </p>
+          <p>
+            If your Wi-Fi problem is one dead spot, that's often one access point rather than a network redesign. We'd
+            rather do the small fix and be there when you actually grow.
+          </p>
+          <p>
+            And if you're being told you need a network refresh without anyone doing a site survey first, get a second
+            opinion. Recommendations made without measurement are sales, not engineering.
+          </p>
+        </div>
+
+        <aside class="panel">
+          <h3>Worth a review if</h3>
+          <ul class="checklist">
+            <li>Guest Wi-Fi shares the network with your business systems</li>
+            <li>Nobody knows what your firewall currently allows</li>
+            <li>Wi-Fi is unreliable in specific parts of the office</li>
+            <li>Remote access was set up quickly and never revisited</li>
+            <li>You have no network diagram or device inventory</li>
+            <li>You're moving offices or expanding your space</li>
+          </ul>
+          <a class="btn btn-secondary" href="#contact">Request a Network Review</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="faq-title">Common questions</h2>
+        </div>
+
+        <div class="grid-2">
+          <article class="mini-card">
+            <h3>Our Wi-Fi keeps dropping. Is that the internet?</h3>
+            <p>
+              Usually not. Most office Wi-Fi complaints come from coverage and capacity — too few access points,
+              consumer gear handling more devices than it was built for, or interference from neighbouring businesses.
+              A site survey tells you which before anyone spends money.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>Do we need business-grade equipment?</h3>
+            <p>
+              Consumer gear works until it doesn't. It usually lacks VLAN support, central management, and long-term
+              security updates. Under ten people in one room it may be fine; beyond that the failures get expensive in
+              staff time.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>Should guest Wi-Fi be separate?</h3>
+            <p>
+              Always. Guest devices are unmanaged and may be compromised. On a shared network they can reach your
+              servers, printers, and workstations. Separating them is one of the highest-value changes available.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>Is a VPN still the right approach?</h3>
+            <p>
+              Depends what people need to reach. Cloud-based applications may not need one. File shares or software
+              hosted in your office still require controlled access — but never remote desktop exposed to the internet.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>How often should firewalls be reviewed?</h3>
+            <p>
+              At least annually, and after any significant change. Rules accumulate as temporary exceptions that never
+              get removed, and reviews routinely find ports open to systems decommissioned years ago.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>Do we still need on-site infrastructure?</h3>
+            <p>
+              Less than most assume, but rarely none — you still need connectivity, a firewall, and Wi-Fi. The real
+              question is whether the servers you're still maintaining are earning their cost.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related services -->
+    <section class="section section-alt" aria-labelledby="related-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="related-title">Related services</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card compact">
+            <h3><a href="/managed-it-services-dallas/">Managed IT Services</a></h3>
+            <p>Ongoing support and monitoring across your whole environment, network included.</p>
+          </article>
+          <article class="card compact">
+            <h3><a href="/cybersecurity-services-dallas/">Cybersecurity &amp; Threat Protection</a></h3>
+            <p>Segmentation and perimeter controls are security work as much as network work.</p>
+          </article>
+          <article class="card compact">
+            <h3><a href="/microsoft-365-support-dallas/">Cloud &amp; Microsoft 365</a></h3>
+            <p>Secure configuration of identity, email, and collaboration tools.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-head left">
+            <h2 id="contact-title">Get your network reviewed</h2>
+            <p class="section-sub">
+              Tell us what you're running and what's frustrating people. We'll tell you what's worth fixing and what
+              isn't — including when the answer is a single access point rather than a project.
+            </p>
+          </div>
+
+          <div class="contact-points">
+            <div class="contact-point">
+              <strong>Measured, not guessed</strong>
+              <span>Site survey before recommendations.</span>
+            </div>
+            <div class="contact-point">
+              <strong>Documented</strong>
+              <span>You get a diagram and inventory you keep.</span>
+            </div>
+            <div class="contact-point">
+              <strong>Fast follow-up</strong>
+              <span>We respond within 1 business day.</span>
+            </div>
+          </div>
+
+          <div class="smallprint">
+            Call <a href="tel:+12147851766">(214) 785-1766</a> or email
+            <a href="mailto:info@xentztechnologies.com">info@xentztechnologies.com</a>
+          </div>
+        </div>
+
+        <form class="form" action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form">
+          <input type="hidden" name="access_key" value="7c1eb47a-2097-4a54-9054-60e91a3f0943">
+          <input type="hidden" name="subject" value="Network inquiry — Xentz Technologies">
+          <input type="hidden" name="redirect" value="https://xentztechnologies.com/thank-you.html">
+          <input type="hidden" name="need" value="Network & Infrastructure">
+
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Jane Smith" />
+          </div>
+
+          <div class="form-row">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" placeholder="Acme Co." />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@company.com" />
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 123-4567" />
+          </div>
+
+          <div class="form-row">
+            <label for="issue">What's driving this?</label>
+            <select id="issue" name="issue" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Unreliable Wi-Fi</option>
+              <option>Moving or expanding office space</option>
+              <option>Security or segmentation concerns</option>
+              <option>Remote access problems</option>
+              <option>Ageing equipment</option>
+              <option>General review</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Tell us more</label>
+            <textarea id="message" name="message" rows="5" required placeholder="How many people, how many locations, and what's going wrong?"></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">Request a Network Review</button>
+
+          <p class="form-note">
+            By submitting, you agree to be contacted about your request. We don't sell your information.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div>
+            <div class="footer-name">Xentz Technologies</div>
+            <div class="footer-desc">
+              Security-first managed IT services, cybersecurity, cloud, and backup solutions for small and mid-sized businesses.
+            </div>
+            <div class="footer-phone">
+              <a href="tel:+12147851766">(214) 785-1766</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-title">Services</div>
+          <a href="/managed-it-services-dallas/">Managed IT</a>
+          <a href="/cybersecurity-services-dallas/">Cybersecurity</a>
+          <a href="/backup-disaster-recovery-dallas/">Backup &amp; Recovery</a>
+          <a href="/microsoft-365-support-dallas/">Microsoft 365</a>
+          <a href="/network-management-dallas/">Network Management</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Company</div>
+          <a href="/#why">Why Us</a>
+          <a href="/#industries">Who We Serve</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year"></span> Xentz Technologies LLC. All rights reserved.</span>
+      <span class="muted">Built for reliability. Designed for trust.</span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle?.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('open');
+    });
+
+    menu?.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('open');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

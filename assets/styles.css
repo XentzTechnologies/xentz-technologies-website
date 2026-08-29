@@ -115,6 +115,7 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 2px; text-underl
 }
 .nav-menu a{ padding: 10px 8px; border-radius: 10px; }
 .nav-menu a:hover{ background: rgba(59,130,246,0.14); text-decoration:none; }
+.nav-phone{ font-weight: 600; color: #93c5fd; white-space: nowrap; }
 
 .nav-toggle{
   display:none;
@@ -446,6 +447,9 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 2px; text-underl
 .service-icon svg{ width: 22px; height: 22px; }
 .service-card h3{ margin: 0; font-size: 16px; }
 .service-card p{ margin: 8px 0 12px; color: var(--muted); }
+.service-card a{ color: #93c5fd; }
+.service-card a:hover{ color: #bfdbfe; }
+
 .list{
   margin: 0;
   padding-left: 18px;
@@ -603,14 +607,19 @@ input:focus, textarea:focus, select:focus{
 }
 .footer-name{ font-weight: 800; letter-spacing: -0.02em; color: #fff; }
 .footer-desc{ margin-top: 6px; color: rgba(199,210,254,0.72); max-width: 60ch; }
+.footer-phone{ margin-top: 8px; }
+.footer-phone a{ color: #93c5fd; font-weight: 600; }
 .footer-links{
   display:flex;
   gap: 40px;
 }
 .footer-col{
-  display:grid;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 8px;
 }
+
 .footer-title{ font-weight: 700; color: #fff; margin-bottom: 6px; }
 .footer-col a{ color: rgba(199,210,254,0.78); text-decoration:none; }
 .footer-col a:hover{ color: #fff; text-decoration: underline; }
