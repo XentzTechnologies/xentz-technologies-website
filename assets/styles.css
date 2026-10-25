@@ -668,3 +668,38 @@ input:focus, textarea:focus, select:focus{
   .trust-strip{ grid-template-columns: 1fr; }
   .brand-tag{ display:none; }
 }
+
+
+/* Xentz header refinements — desktop fit, keyboard-accessible skip link */
+.skip-link, .skip {
+  position: fixed; left: 16px; top: -120px; z-index: 2000;
+  width: auto; height: auto; overflow: visible;
+  padding: 11px 16px; background: #2563eb; color: #fff;
+  border: 2px solid #93c5fd; border-radius: 9px;
+  text-decoration: none; font-weight: 600;
+}
+.skip-link:focus, .skip:focus, .skip-link:focus-visible, .skip:focus-visible {
+  top: 12px; left: 16px; width: auto; height: auto;
+}
+@media (min-width: 1251px) {
+  .site-header .container {max-width: 1480px;}
+  .header-inner {gap: 12px;}
+  .brand {min-width: 225px; flex-shrink: 0;}
+  .nav-menu {gap: 8px;}
+  .nav-menu a:not(.btn) {padding: 9px 5px; white-space: nowrap;}
+  .nav-menu .btn {white-space: nowrap;}
+}
+/* Use the site's existing mobile navigation before links start wrapping. */
+@media (max-width: 1250px) {
+  .nav-toggle {display: inline-flex;}
+  .nav-menu {
+    position: absolute; right: 0; top: calc(100% + 10px);
+    width: min(92vw, 420px); display: none; flex-direction: column;
+    align-items: stretch; gap: 6px; padding: 12px;
+    border-radius: 16px; background: #0b0f1a;
+    border: 1px solid var(--border); box-shadow: var(--shadow);
+    max-height: calc(100dvh - 100px); overflow-y: auto;
+  }
+  .nav-menu.open {display: flex;}
+  .nav-menu a {padding: 12px; overflow-wrap: anywhere;}
+}
